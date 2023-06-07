@@ -1,0 +1,304 @@
+@import url('https://fonts.cdnfonts.com/css/games');
+@import url('https://fonts.cdnfonts.com/css/daysans');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif', 'arial';
+}
+body{
+    min-height: 100%;
+    background: url('../img/background(2).jpg') repeat;
+    background-repeat: repeat;
+    background-size: cover;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(1, 134, 1, 135);
+}
+nav .logout{
+    position: absolute;
+    right: 0;
+    margin-top: auto;
+    margin-right: 10px;
+    width: 150px;
+    height: 65px;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 0 0 20px rgba(1, 134, 1, 135);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-family: 'DAYSANS', sans-serif;
+    font-weight: 900;
+    transition: .5s;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+    font-size: 50px;
+}
+.logo .menuIcon{
+    color: #2a421e;
+    font-size: 50px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+.logo .navMenu{
+    width: 100%;
+    color: #f0eaea;
+    font-size: 22px;
+    font-weight: 500;
+}
+nav .logosName{
+    position: fixed;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.logo .logoName{
+    color: #000000;
+    font-family: Noto Sans Variable,Noto Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    font-size: 60px;
+    margin-left: auto;
+    margin-top: auto;
+    font-weight: 900;
+    width: 100%;
+}
+nav .sidebar{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 260px;
+    padding: 20px 0;
+    background-color: #e6e6e6;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+nav.open .sidebar{
+    left: 0;
+}
+.sidebar .sidebarContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 16px;
+}
+.sidebarContent .profile{
+    position: fixed;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 65px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.sidebarContent .users{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -50px;
+    padding: 20px 16px;
+    color: #000000;
+} 
+.sidebarContent .text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 150px;
+    padding: 30px 16px;
+    color: #000000;
+}
+.sidebarContent .list{
+    list-style:  none;
+}
+.navAbout .contact{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+.sidebarContent .webinfo{
+    color: #000000;
+    padding: 4px;
+}
+.sidebarContent .contacts{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 3px;
+    margin-top: 5px;
+    padding: 4px;
+    color: #000000;
+}
+.sidebarContent .about{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+    padding: 4px;
+    margin-left: 3px;
+    color: #000000;
+}
+.list .navLink{
+    display: flex;
+    align-items: center;
+    padding: 14px 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.navLink:hover{
+    background-color: #000000;
+}
+.navLink .settingIcon{
+    margin-right: 14px;
+    font-size: 20px;
+    color: #000000;
+}
+.navLink .link{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+.navLink:hover .settingIcon,
+.navLink:hover .link{
+    color: black;
+}
+.navAbout .settingIcon{
+    margin-right: 14px;
+    font-size: 20px;
+    color: #000000;
+}
+.navAbout .contact{
+    display: flex;
+    align-items: center;
+    padding: 14px 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 200%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    background: rgba(0, 0, 0, 0.3);
+}
+nav.open ~ .overlay{
+    opacity: 1;
+    left: 255px;
+    pointer-events: auto;
+}
+.container{
+    position: relative;
+    height: 87vh;
+    justify-content: center;
+    grid-gap: 3em;
+    justify-items: center;
+
+}
+.box {
+    margin-top: 850px;
+    margin-left: 35px;
+    position: relative;
+    width: 500px;
+    height: 250px;
+    box-shadow: 0 0 20px rgba(1, 134, 1, 135);
+    backdrop-filter: blur(2px);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    z-index: 1;
+    padding: 2em;
+    border-radius: .3em;
+    
+}
+.box form{
+    position: absolute;
+    inset: 4px;
+    background: transparent;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group .content{
+    position: absolute;
+    inset: 4px;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.input-group .hangman{
+    color:  #b9eb9f;
+    display: flex;
+    margin-top: -30px;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 20px rgba(1, 134, 1, 135);
+}
+.input-group .nameHangman{
+    color: #615c5c;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 235px;
+    font-family: 'DAYSANS', sans-serif;
+    
+}
+.input-group .btnHangman{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 243px;
+    width: 150px;
+    height: 65px;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 0 0 20px rgba(1, 134, 1, 135);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-family: 'DAYSANS', sans-serif;
+    font-weight: 900;
+    transition: .5s;
+}
+.input-group .btnHangman:hover{
+        background: white;
+        color: black;
+}
+.hangman{
+    width: 100%;
+}

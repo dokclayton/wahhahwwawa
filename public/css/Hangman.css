@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url('../img/background(2).jpg') repeat;
+}
+
+.container {
+  font-size: 16px;
+  background-color: #ffffff;
+  width: 90vw;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 0.6em;
+  box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+}
+
+#options-container {
+  text-align: center;
+}
+
+#options-container div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0 2.4em;
+}
+
+#options-container button {
+  padding: 0.6em 1.2em;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+  border-radius: 0.3em;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 2vw;
+  margin: 0.6em 0.3em;
+}
+.hangmanGame.input-group{
+  box-shadow: 0cap;
+}
+
+#options-container button:disabled {
+  border: 3px solid #808080;
+  color: #808080;
+  background-color: #efefef;
+}
+
+#options-container button.active {
+  background-color: #8c52ff;
+  border: 3px solid #000000;
+  color: #fff;
+}
+
+.letter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+.letters{
+  width: 2.5rem;
+}
+.new-game-popup {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6em;
+}
+
+#user-input-section {
+  justify-content: center;
+  display: flex;
+  margin: 0.6em 0 1.2em 0;
+  font-size: 2.5vw;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  border: 10px solid #8c52ff;
+  border-radius: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+#result-text h2 {
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+#result-text p {
+  font-size: 1.8vw;
+  margin: 1em 0 2em 0;
+}
+
+#result-text span {
+  font-weight: 600;
+}
+
+#new-game-button {
+  font-size: 2vw;
+  padding: 0.5em 1em;
+  background-color: #8c52ff;
+  border: 3px solid #000000;
+  color: #fff;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+.win-msg {
+  color: #39d78d;
+}
+
+.lose-msg {
+  color: #fe5152;
+}
+
+button.letters {
+  font-size: 6vw;
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 1em;
+  }
+
+  #options-container button {
+    font-size: 3.5vw;
+    margin: 0.6em 0.4em;
+  }
+
+  #user-input-section {
+    font-size: 4vw;
+  }
+
+  #result-text h2 {
+    font-size: 4vw;
+  }
+
+  #result-text p {
+    font-size: 3vw;
+  }
+
+  #new-game-button {
+    font-size: 3.5vw;
+  }
+  .canvas{
+  flex-direction: columns ;
+  }
+}
+

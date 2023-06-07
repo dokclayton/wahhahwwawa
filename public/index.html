@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link href="https://fonts.cdnfonts.com/css/death-squire" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/daysans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+<body>
+
+<div class="container">
+    <nav>
+     <button class="logout">log out</button>
+        <div class="logo">
+            <i class="menuIcon"><ion-icon name="menu"></ion-icon></i>
+            <div class="logosName">
+                <h1 class="logoName">EduMnemonics</h1>
+            </div>
+        </div>
+        <diV class="box">  
+                <form id="hangmanGame" class="input-group" action="Hangman.html">
+                    <img class="hangman" src="img/Hangman.png">
+                    <div class="content">
+                        <h1 class="nameHangman">Hangman</h1>
+                        <button class="btnHangman" type="submit">Play</button> 
+                    </div> 
+                </form>
+        </diV>
+        <diV class="box">
+            <span class="borderLine"></span>
+                <form class="input-group" action="WordScramble.html">
+                    <img class="hangman" src="img/WordScramble.png">
+                    <div class="content">
+                        <h1 class="nameHangman">Word Scramble</h1>
+                        <button class="btnHangman" type="submit">Play</button> 
+                    </div>
+
+                </form>
+        </diV>
+        <diV class="box">
+            <span class="borderLine"></span>
+                <form class="input-group" action="SELECT.html">
+                    <img class="hangman" src="img/wallpaper1.jpg">
+                    <div class="content">
+                        <h1 class="nameHangman">Quiz</h1>
+                        <button class="btnHangman" type="submit">Play</button> 
+                    </div>
+
+                </form>
+        </diV>
+        <div class="sidebar">
+            <div class="logo">
+                <i class="menuIcon"><ion-icon name="menu"></ion-icon></i>
+            </div>
+            <div class="sidebarContent">
+                <img class="profile" src="img/TCU.png">
+                <div class="text">
+                    <span class="name">name:</span>
+                    <span id="full-name"></span><br>
+                    <span id="user-name"></span>
+                </div>
+                    <span class="webinfo">Website information and about</span>
+                <ul class="lists">
+                    <li class="list">
+                        <a href="/" class="navLink">
+                            <i class="settingIcon"><ion-icon name="information-circle-outline"></ion-icon></i>
+                            <span class="link">About</span>
+                        </a>                            
+                    </li>
+                    <li class="list">
+                        <a href="/" class="navLink">
+                            <i class="settingIcon"><ion-icon name="person-circle-outline"></ion-icon></ion-icon></i>
+                            <span class="link">Contact:</span>
+                        </a>                            
+                    </li>
+                    <li class="list">
+                        <a href="/" class="navLink">
+                            <i class="settingIcon"><i class="settingIcon"><ion-icon name="mail-outline"></ion-icon></i>
+                            <span class="link">E-mail:</span>
+                        </a>                            
+                    </li>
+                </ul>
+            </div>    
+        </div>
+    </nav>
+
+    </nav>
+</div>
+    <script src="js/home.js"></script>
+    <section class="overlay"></section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

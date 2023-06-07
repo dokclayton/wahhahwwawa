@@ -1,0 +1,88 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: url('../img/background(2).jpg') repeat;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    width: 1.2vm;
+  }
+  .menu-container p {
+    margin: 10px;
+    background-color: #3a983d;
+    font-family: 'DAYSANS', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .input-group button{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #3a983d;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 10.5rem;
+    cursor: pointer;
+    transition: .5s;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'DAYSANS', sans-serif;
+    font-weight: 900;
+    transition: .5s;
+  }
+  .input-group2 button{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #3a983d;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 10.5rem;
+    cursor: pointer;
+    transition: .5s;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'DAYSANS', sans-serif;
+    font-weight: 900;
+    transition: .5s;
+  }
+    .input-group3 button{
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #3a983d;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 10.5rem;
+      cursor: pointer;
+      transition: .5s;
+      background: transparent;
+      border: 2px solid white;
+      outline: none;
+      cursor: pointer;
+      color: white;
+      font-family: 'DAYSANS', sans-serif;
+      font-weight: 900;
+      transition: .5s;
+  }
